@@ -1,0 +1,26 @@
+@import "../../../styles/colors.scss";
+
+.container {
+  display: flex;
+}
+
+.tab {
+  border-radius: 4px;
+  padding: 8px 16px;
+  margin: 4px;
+
+  &:hover {
+    cursor: pointer;
+    background-color: $primary_hover_color;
+  }
+
+  &:active {
+    background-color: $primary_active_color;
+  }
+}
+
+.tabActive {
+  @extend .tab;
+
+  background-color: $primary_color;
+}

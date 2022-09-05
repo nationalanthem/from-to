@@ -1,0 +1,22 @@
+@import "../../../styles/colors.scss";
+
+.button {
+  border: none;
+  color: $text_color;
+  background-color: $primary_color;
+  width: 128px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  border-radius: 4px;
+  margin: 0 2px;
+  font-weight: bold;
+
+  &:hover {
+    background-color: $primary_hover_color;
+    cursor: pointer;
+  }
+
+  &:active {
+    background-color: $primary_active_color;
+  }
+}
